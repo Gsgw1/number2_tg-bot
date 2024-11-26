@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        header {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .car-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        .car-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .car-card h3 {
+            margin: 15px 0;
+            color: #fff;
+        }
+        .car-card button {
+            background: #4e54c8;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .car-card button:hover {
+            background: #3c3faa;
+        }
+        #main_car{
+        display: none;
+        }
+        #error {
+        color: black;
+        }
+    </style>
+</head>
+<body>
+  <div id="main_car" class="main">
+    <header>
+        <h1>Car Booking Service</h1>
+    </header>
+    <div id="header" class="container">
+
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+1" alt="Car 1">
+            <h3>Car Model 1</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+2" alt="Car 2">
+            <h3>Car Model 2</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+3" alt="Car 3">
+            <h3>Car Model 3</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+4" alt="Car 4">
+            <h3>Car Model 4</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+5" alt="Car 5">
+            <h3>Car Model 5</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+6" alt="Car 6">
+            <h3>Car Model 6</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+7" alt="Car 7">
+            <h3>Car Model 7</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+8" alt="Car 8">
+            <h3>Car Model 8</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+9" alt="Car 9">
+            <h3>Car Model 9</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+10" alt="Car 10">
+            <h3>Car Model 10</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+11" alt="Car 11">
+            <h3>Car Model 11</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+12" alt="Car 12">
+            <h3>Car Model 12</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+13" alt="Car 13">
+            <h3>Car Model 13</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+14" alt="Car 14">
+            <h3>Car Model 14</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+15" alt="Car 15">
+            <h3>Car Model 15</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+16" alt="Car 16">
+            <h3>Car Model 16</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+17" alt="Car 17">
+            <h3>Car Model 17</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+18" alt="Car 18">
+            <h3>Car Model 18</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+19" alt="Car 19">
+            <h3>Car Model 19</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+20" alt="Car 20">
+            <h3>Car Model 20</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+21" alt="Car 21">
+            <h3>Car Model 21</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+22" alt="Car 22">
+            <h3>Car Model 22</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+23" alt="Car 23">
+            <h3>Car Model 23</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+24" alt="Car 24">
+            <h3>Car Model 24</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+25" alt="Car 25">
+            <h3>Car Model 25</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+26" alt="Car 26">
+            <h3>Car Model 26</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+27" alt="Car 27">
+            <h3>Car Model 27</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+28" alt="Car 28">
+            <h3>Car Model 28</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+29" alt="Car 29">
+            <h3>Car Model 29</h3>
+            <button>Rent</button>
+        </div>
+    
+        <div class="car-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Car+30" alt="Car 30">
+            <h3>Car Model 30</h3>
+            <button>Rent</button>
+        </div>
+    
+    </div>
+  </div>
+
+  <div id="form" class="container">
+    <form class="registration-form">
+        <h2>Регистрация</h2>
+
+        <label for="username">Имя пользователя</label>
+        <input type="text" id="username" name="username" placeholder="Введите имя пользователя" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+        <label for="confirm-password">Повторите пароль</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Повторите пароль" required>
+        <div id="error"></div>
+
+        <button id="sobmit" type="submit">Зарегистрироваться</button>
+        <p class="registr-link">Уже есть аккаунт? <a class="link" href="form_login.html">Войти</a></p>
+    </form>
+</div>
+<script src="import.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script>
+    let tg = window.Telegram.WebApp;
+
+    // Кнопка отправки формы
+    let submit = document.getElementById('sobmit'); // Исправлен ID на 'sobmit'
+    
+    submit.addEventListener('click', (e) => {
+        e.preventDefault(); // Предотвращаем стандартное поведение формы
+
+        // Очищаем сообщения об ошибках
+        document.getElementById('error').innerText = '';
+
+        // Получаем значения полей формы
+        let name = document.getElementById('username').value.trim();
+        let email = document.getElementById('email').value.trim();
+        let password = document.getElementById('password').value.trim();
+
+        // Валидация формы
+        if (name.length < 5) {
+            document.getElementById('error').innerText = 'Ошибка в имени (не менее 5 символов)';
+            return;
+        }
+
+        if (email.length < 5) {
+            document.getElementById('error').innerText = 'Ошибка в email (не менее 5 символов)';
+            return;
+        }
+
+        if (password.length < 5) {
+            document.getElementById('error').innerText = 'Ошибка в пароле (не менее 5 символов)';
+            return;
+        }
+
+        // Если все проверки пройдены
+        document.getElementById('error').innerText = ''; // Убираем сообщение об ошибке
+
+        // Устанавливаем значения в форме на основе данных Telegram
+        document.getElementById('username').value = tg.initDataUnsafe?.user?.first_name + ' ' + tg.initDataUnsafe?.user?.last_name;
+
+        // Переход к основному контенту
+        document.getElementById('form').style.display = 'none';
+        document.getElementById('main_car').style.cssText = `
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            overflow-y: auto;
+            justify-content: flex-start;
+            align-items: center;
+        `;
+
+        // Отправляем данные в Telegram (если требуется)
+        let data = {
+            name: name,
+            email: email,
+            password: password,
+        };
+        tg.sendData(JSON.stringify(data)); // Отправка данных в Telegram
+    });
+</script>
+
+</body>
+</html>

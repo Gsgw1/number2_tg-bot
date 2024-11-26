@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.form-container input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-container .btn {
+  width: 100%;
+  padding: 10px;
+  background: #0066ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.form-container .btn:hover {
+  background: #0052cc;
+}
+
+.form-container p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.link {
+  color: #b890f8;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #9a50e6;
+}
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Вход</h2>
+    <form>
+      <label for="username">Имя пользователя</label>
+      <input type="text" id="username" placeholder="Введите имя пользователя" />
+      
+      <label for="password">Пароль</label>
+      <input type="password" id="password" placeholder="Введите пароль" />
+      
+      <button class="btn">Войти</button>
+      
+      <p>
+        Нет аккаунта? <a class="link" href="index.html" id="to_register">Зарегистрироваться</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
